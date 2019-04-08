@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,28 +15,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="woohyuk_trait" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hxc-8J-ibX" userLabel="Blue">
-                                <rect key="frame" x="0.0" y="120" width="150" height="428"/>
+                                <rect key="frame" x="0.0" y="120" width="253.5" height="884"/>
                                 <color key="backgroundColor" red="0.16528424546115073" green="0.43130629929189579" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qH-SE-qWe" userLabel="Red">
-                                <rect key="frame" x="158" y="120" width="162" height="428"/>
+                                <rect key="frame" x="261.5" y="120" width="506.5" height="884"/>
                                 <color key="backgroundColor" red="1" green="0.19754611130244282" blue="0.13246047941344774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueRed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sV-oB-uKK">
+                                <rect key="frame" x="320" y="9" width="128.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RedBlue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qh1-Vb-tuc">
+                                <rect key="frame" x="352" y="58" width="64" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1qH-SE-qWe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="B9c-Vh-CSq"/>
                             <constraint firstItem="Hxc-8J-ibX" firstAttribute="width" secondItem="1qH-SE-qWe" secondAttribute="width" multiplier="0.5" priority="750" id="ChS-Xy-d0I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1qH-SE-qWe" secondAttribute="bottom" constant="20" id="Ea3-sV-xTJ"/>
+                            <constraint firstItem="0sV-oB-uKK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JEC-PA-rnj"/>
                             <constraint firstItem="Hxc-8J-ibX" firstAttribute="width" relation="greaterThanOrEqual" secondItem="1qH-SE-qWe" secondAttribute="width" multiplier="1:100000" constant="150" id="OPM-e8-RnY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hxc-8J-ibX" secondAttribute="bottom" constant="20" id="PNf-2c-b7Q"/>
+                            <constraint firstItem="Qh1-Vb-tuc" firstAttribute="top" secondItem="0sV-oB-uKK" secondAttribute="bottom" constant="8" id="QP7-3Z-r3S"/>
                             <constraint firstItem="1qH-SE-qWe" firstAttribute="leading" secondItem="Hxc-8J-ibX" secondAttribute="trailing" constant="8" id="Wrm-uB-i8J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1qH-SE-qWe" secondAttribute="trailing" id="XAR-ZS-lVU"/>
+                            <constraint firstItem="Qh1-Vb-tuc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="deJ-cR-dLC"/>
                             <constraint firstItem="Hxc-8J-ibX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oQG-FF-xke"/>
+                            <constraint firstItem="1qH-SE-qWe" firstAttribute="top" secondItem="0sV-oB-uKK" secondAttribute="bottom" constant="70" id="vu9-aj-sww"/>
                             <constraint firstItem="Hxc-8J-ibX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="zKK-iB-IXW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
