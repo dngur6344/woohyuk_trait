@@ -55,10 +55,22 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1qH-SE-qWe" secondAttribute="trailing" id="XAR-ZS-lVU"/>
                             <constraint firstItem="Qh1-Vb-tuc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="deJ-cR-dLC"/>
                             <constraint firstItem="Hxc-8J-ibX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oQG-FF-xke"/>
-                            <constraint firstItem="1qH-SE-qWe" firstAttribute="top" secondItem="0sV-oB-uKK" secondAttribute="bottom" constant="70" id="vu9-aj-sww"/>
+                            <constraint firstItem="1qH-SE-qWe" firstAttribute="top" secondItem="0sV-oB-uKK" secondAttribute="bottom" constant="70" id="vu9-aj-sww">
+                                <variation key="heightClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="Hxc-8J-ibX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="zKK-iB-IXW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="deJ-cR-dLC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="deJ-cR-dLC"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
