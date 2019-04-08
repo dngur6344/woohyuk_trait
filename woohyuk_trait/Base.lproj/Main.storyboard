@@ -63,11 +63,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="QP7-3Z-r3S"/>
                                 <exclude reference="deJ-cR-dLC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
+                                <include reference="QP7-3Z-r3S"/>
                                 <include reference="deJ-cR-dLC"/>
                             </mask>
                         </variation>
